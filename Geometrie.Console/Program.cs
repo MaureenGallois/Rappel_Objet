@@ -8,8 +8,7 @@ namespace Geometrie.Console
         static void Main(string[] args)
         {
             Point p = new Point(3, 4);
-            Point p1 = new Point(3, 4);
-            p1.X = 6;
+            var p2 = new Point(5, 7); // Revient à faire Point p2 = new Point(5, 7); car cela permet de racoussir
         }
     }
 }
