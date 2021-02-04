@@ -37,5 +37,20 @@ namespace Geometrie.Models
             Y = ord;
         }
 
+        public double CalculerDistance(Point autrePoint)
+        {
+            return Math.Sqrt(
+                Math.Pow(X - autrePoint.X, 2)
+                +
+                Math.Pow(Y - autrePoint.Y, 2)
+            );
+        }
+
+        public override string ToString()
+        {
+            //return "(" + X + "," + Y + ")"; //pour avoir (3,4) Mais pas bien pour la mémoire
+            return $"({X}, {Y})"; //Fait la même chose et c'est mieux pour la mémoire
+        }
+
     }
 }

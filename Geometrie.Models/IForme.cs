@@ -5,7 +5,7 @@ namespace Geometrie.Models
     /// <summary>
     /// Interface d'une forme dans un repère à deux dimensions
     /// </summary>
-    public interface IForme
+    internal interface IForme
     {
         /// <summary>
         /// Calcul de périmètre de la IForme
