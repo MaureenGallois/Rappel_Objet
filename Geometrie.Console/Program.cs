@@ -1,4 +1,5 @@
 ﻿using System;
+using Geometrie.Models;
 
 namespace Geometrie.Console
 {
@@ -6,7 +7,9 @@ namespace Geometrie.Console
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Hello World!");
+            Point p = new Point(3, 4);
+            Point p1 = new Point(3, 4);
+            p1.X = 6;
         }
     }
 }

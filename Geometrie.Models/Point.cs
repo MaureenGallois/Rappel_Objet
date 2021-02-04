@@ -16,7 +16,7 @@ namespace Geometrie.Models
         public int X
         {
             get { return x;  }
-            set { x = value; }
+            private set { x = value; }
         }
 
         /// en version courte (mais qui rée la même chose à la compilation)
@@ -29,8 +29,8 @@ namespace Geometrie.Models
         /// <summary>
         /// Constructeur de point
         /// </summary>
-        /// <param name="abs"></param>
-        /// <param name="ord"></param>
+        /// <param name="abs">Abscisse du point à créer</param>
+        /// <param name="ord">Ordonnée du point à créer</param>
         public Point(int abs, int ord)
         {
             X = abs; //en c# le this. est sous entendu
